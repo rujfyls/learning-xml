@@ -4,20 +4,19 @@
 <!--ниже описано по какому стандарту выполненна эта схема-->
 <books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="books.xsd">
-
-    <!--    а это расположение этой схемы, может быть в файле, может быть в интернете-->
+<!--    а это расположение этой схемы, может быть в файле, может быть в интернете-->
 
     <book id="1">
         <title>Братья карамазовы</title>
         <autor>Грек</autor>
-        <count_page>200.0</count_page>
+        <count_page>100</count_page>
         <year>2025</year>
     </book>
 
     <book id="2">
         <title>Война и мир</title>
         <autor>Путин</autor>
-        <count_page>100.0</count_page>
+        <count_page>0</count_page>
         <year>2022</year>
     </book>
 
