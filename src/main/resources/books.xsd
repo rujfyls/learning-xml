@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="book" type="book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--    комплексный обозначает что book состоит из других тегов,
+    а секверция обозначает что их book будет несколько, и они будут в той последовательности что мы пишем
+    может быть all, и тогда пофиг какая последовательность,
+    или choise чтобы выбирать или это или то-->
+    <!--    maxOccurs = максимальное количество тегов-->
+
+    <xs:complexType name="book">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="autor" type="xs:string"/>
+            <xs:element name="count_page">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:minInclusive value="99"/>
+                        <xs:pattern value="\d+.\d"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!--            restriction - ограничения-->
+
+            <xs:element name="year">
+                <xs:simpleType>
+                    <xs:restriction base="YEARS"/>
+                </xs:simpleType>
+            </xs:element>
+
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+    <!--    xs это сокращения от xsd, можно писать хоть то, хоть то-->
+
+
+    <!--делаем своё, чтобы можно было вставлять где я захочу-->
+    <xs:simpleType name="YEARS">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1999"/>
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

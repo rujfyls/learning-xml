@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<!--это валидатор dtd-->
+<!DOCTYPE students [
+        <!ELEMENT students (student*)>
+        <!ELEMENT student (name, phoneNumber, country, city, street)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT phoneNumber (#PCDATA)>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT street (#PCDATA)>
+        <!ATTLIST student id CDATA #REQUIRED>
+        ]>
+
+
+<students>
+    <student id="1">
+        <name>Alex</name>
+        <phoneNumber>+79524569148</phoneNumber>
+        <country>Russia</country>
+        <city>Balakhna</city>
+        <street>Olimpiyskaya</street>
+    </student>
+    <student id="2">
+        <name>Kate</name>
+        <phoneNumber>+79648306807</phoneNumber>
+        <country>Russia</country>
+        <city>Balakhna</city>
+        <street>Olimpiyskaya</street>
+    </student>
+</students>
