@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee>
+    <age>10</age>
+    <email>q@mail.ru</email>
+    <name>q</name>
+    <phone>789456123</phone>
+</employee>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="person.xsd">
+
+    <person login="rujfyls" faculty="CS">
+        <name>Alexander</name>
+        <telephone>27</telephone>
+        <adress>
+            <city>balakhna</city>
+            <country>RUSSIA</country>
+            <street>Olimpiyskaya</street>
+        </adress>
+    </person>
+
+    <person login="kefirchik" faculty="BIO">
+        <name>Ekaterina</name>
+        <telephone>26</telephone>
+        <adress>
+            <city>balakhna</city>
+            <country>RUSSIA</country>
+            <street>Vladimirkaya</street>
+        </adress>
+    </person>
+</persons>

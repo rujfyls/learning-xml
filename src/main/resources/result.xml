@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<BookCatalogue>
+    <Book>
+        <Title>Book #1</Title>
+        <Author>Author #1</Author>
+        <Date>19-05-2022</Date>
+        <Cost currency="RUB">10</Cost>
+    </Book>
+    <Book>
+        <Title>Book #2</Title>
+        <Author>Author #2</Author>
+        <Date>19-05-2022</Date>
+        <Cost currency="RUB">20</Cost>
+    </Book>
+    <Book>
+        <Title>Book #3</Title>
+        <Author>Author #3</Author>
+        <Date>19-05-2022</Date>
+        <Cost currency="RUB">30</Cost>
+    </Book>
+    <Book>
+        <Title>Book #4</Title>
+        <Author>Author #4</Author>
+        <Date>19-05-2022</Date>
+        <Cost currency="RUB">40</Cost>
+    </Book>
+    <Book>
+        <Title>Book #5</Title>
+        <Author>Author #5</Author>
+        <Date>19-05-2022</Date>
+        <Cost currency="RUB">50</Cost>
+    </Book>
+</BookCatalogue>

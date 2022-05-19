@@ -27,7 +27,6 @@
                 </xs:simpleType>
             </xs:element>
             <!--            restriction - ограничения-->
-
             <xs:element name="year">
                 <xs:simpleType>
                     <xs:restriction base="YEARS"/>
